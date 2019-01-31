@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Rosarivo', serif;
+  background-color: #1d1e22;
+  color: #d4d4dc;
+}
+
+main {
+  padding: 1em;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+a {
+  color: #feda6a;
+}
+
+button {
+  -webkit-appearance: none;
+  padding: 1em;
+  border: none;
+  margin: 0.5em auto;
+  font-family: 'Rosarivo', serif;
+  font-size: 1.1em;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+  width: 100%;
+  background-color: #393f4d;
+  color: #d4d4dc;
+}
+
+button:hover,
+button:focus {
+  background-color: #feda6a;
+  color: #1d1e22;
+  outline: none;
+}
+
+select {
+  -webkit-appearance: none;
+  font-family: 'Rosarivo', serif;
+  font-size: 1.25em;
+  padding: 0.25em 0.75em;
+  text-align: center;
+}
+
+.toggle-setup {
+  cursor: pointer;
+}
+
+.setup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.setup label {
+}
+
+.setup label span {
+  display: block;
+  padding: 0.5em 0;
+}
+
+.bag {
+  font-style: italic;
+  margin: 2.5em 0;
+  padding: 1em;
+  outline: 2px solid #393f4d;
+}
+
+.last-token {
+  color: white;
+  margin-top: 0.75em;
+  font-size: 3em;
+}
+
+small {
+  display: block;
+  margin-top: 2em;
+}
+
+@media (min-width: 601px) {
+  button {
+    display: inline-block;
+    width: auto;
+    margin: 0.25em;
+    font-size: 1.25em;
+    padding: 1em 2em;
+  }
+}
+
+@media (min-width: 901px) {
+  .setup {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
